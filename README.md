@@ -1,16 +1,28 @@
 # CS305
 •	Briefly summarize your client, Artemis Financial, and its software requirements. Who was the client? What issue did the company want you to address?
+
 Our client, Artemis Financial, is a consulting firm that develops individualized financial plans for its customers. We were tasked with modernizing its systems and implementing security recommendations and practices. 
+
 •	What did you do well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall well-being?
+
 While reviewing the provided codebase, I think I did well at both identifying and patching vulnerabilities. It is vital to code securely, as unsafe practices lead to numerous negative consequences. On the lighter end, you may have to implement security measures after the fact, which can result in lost time and productivity. On the more severe end, a lack of secure code can let your system get breached, and all the data is being held for ransom. Software security adds value to a company in a few ways. The first is about brand and trust: if a consumer sees that you are not prone to leaking their data, they are more likely to trust the company and build a positive reputation. On the business side, it adds value through the use of mitigation plans in the event of an attack and defense to fend off attackers at all avenues.
+
 •	Which part of the vulnerability assessment was challenging or helpful to you?
+
 The most helpful part of the vulnerability assessment to me was the dependency check and going through the different vulnerabilities. What I found challenging was the certificate process. I found creating a self-signed certificate to be trivial, but the different keystore extensions gave me a little hiccup.
+
 •	How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
+
 In the program, we implemented different layers of security. The first was converting the website to use HTTPS instead of HTTP. The second was creating an endpoint with a checksum to allow for data integrity. The final technique we used was the OWASP dependency check, which allowed us to scan all the dependencies for known CVES. 
+
 •	How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
-I ensured the code and software were functional and secure through secure coding, code review, static testing, and active testing. During and after refactoring the code I kept using these same principles to ensure no new vulnerabilities were introduced and code quality was high.
+
+I ensured the code and software were functional and secure through secure coding, code review, static testing, and active testing. During and after refactoring, I kept using these same principles to ensure no new vulnerabilities were introduced and that code quality remained high.
 
 •	What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?
+
 The OWASP dependency check will be helpful, as it allows me to ensure that my dependencies don’t have known vulnerabilities and, if I cannot fix them, avoid being susceptible to them. Creating secure, high-quality code is also a valuable practice that will be used throughout my career.
+
 •	Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+
 I would highlight several methods for creating secure code, including understanding vulnerability testing and mitigation, applying a certificate to ensure the web service runs over HTTPS, and implementing different cipher algorithms.
